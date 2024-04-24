@@ -1,0 +1,20 @@
+def linear_search(a,key):
+    n = len(a)
+    for i in range (n):
+        if a[i] == key:
+            return i
+    return -1
+list1 = [10,20,40,5,15]
+print("input list is ;",list1)
+k = int(input("enter the key element :"))
+i = linear_search(list1,k)
+if (i==1):
+    print("key is not found")
+else:
+    print("key found at index :",i)
+x = list(range(1,100))
+plt.plot(x,[y for y in x])
+plt.title("time complexity of linear search is 0(n^2)")
+plt.xlabel("input")
+plt.ylabel("time")
+plt.show()
